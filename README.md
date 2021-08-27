@@ -24,3 +24,23 @@ It is necessary to computerize the management of the isolation area at the dormi
 
 ### 4.1 Perception Level: Entity-relationship Model (ER Model)
 ![image](https://user-images.githubusercontent.com/72458113/131081968-ba06bb62-2011-4d5e-99eb-2edd63e46162.png)
+
+
+### 4.2 Physical Level
+![image](https://user-images.githubusercontent.com/72458113/131082379-9c3bd45c-2b28-45c2-9728-28567ebafc91.png)
+
+
+## 5. Handing problem math with SQL (file CODE_SQL)
+4 steps:
+1. Create table and insert data
+
+2. Create stored procedures
+  - Import to MaPH to output data: MANCL, TENCEL, MA COVID. If the room just entered is empty, return 0
+  - Import old MANCL, MAPH, new MATOA  to export data: MANCL, TENCEL, MA COVID. If the room you just entered is empty, return 0. Please update room, new building for that person isolated . If no found found return return 0
+
+3. Trigger:
+  - Create trigger return date about must greater than departure date at PHIEKBYT 
+  - Create trigger notify when people quarantine leave from the old location more than 30m
+  - Create trigger auto-update state covid if XNlan1 or XNlan2 is positive 
+
+4. LOGIN-ROLE: Administration Has All Permission
