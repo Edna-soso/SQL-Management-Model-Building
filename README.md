@@ -44,3 +44,9 @@ It is necessary to computerize the management of the isolation area at the dormi
   - Create trigger auto-update state covid if XNlan1 or XNlan2 is positive 
 
 4. LOGIN-ROLE: Administration Has All Permission
+
+STT | Role | Permission 
+------------ | ------------- | ------------- 
+1 | NGCL | UPDATE, SELECT,VIEW  table PHIEUKBYT
+VIEW on table TOADO
+2 | NHANVIEN_CANBO | UPDATE, SELECT, VIEW, SELECT on all table
